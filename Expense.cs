@@ -8,9 +8,10 @@ namespace VisualProgrammingFinalProject
 {
     internal class Expense
     {
-        public float amount { get; set; }
-        public Date date { get; set; }
-        public bool recurring { get; set; }
+        public string name;
+        public float amount;            // Dollar amount of expense
+        public Date date;               // Date of expense
+        public bool recurring;          // Expense is recurring
 
     }
 

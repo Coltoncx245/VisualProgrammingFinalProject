@@ -12,11 +12,16 @@ namespace VisualProgrammingFinalProject
 {
     public partial class Form1 : Form
     {
+        List<Budget> availableBudgets; // Saved budgets available to load into main view form
         public Form1()
         {
             InitializeComponent();
         }
 
-        
+        private void newBudgetToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BudgetCreatorForm budgetCreatorForm = new BudgetCreatorForm();
+            budgetCreatorForm.ShowDialog();
+        }
     }
 }
