@@ -53,6 +53,19 @@ namespace VisualProgrammingFinalProject
             
         }
 
-
+        private void btn_SaveBudget_Click(object sender, EventArgs e)
+        {
+            if (tb_BudgetName.Text == "")
+            {
+                MessageBox.Show("Must enter a valid budget name");
+            }
+            else
+            {
+                newBudget.name = tb_BudgetName.Text;
+                Form1.availableBudgets.Add(newBudget);
+                this.Close();
+            }
+            
+        }
     }
 }

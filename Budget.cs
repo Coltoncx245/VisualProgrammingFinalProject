@@ -8,6 +8,8 @@ namespace VisualProgrammingFinalProject
 {
     internal class Budget
     {
+        public string name;
+
         public List<Income> budgetIncome;
         public List<Expense> budgetExpenses;
 

@@ -12,10 +12,13 @@ namespace VisualProgrammingFinalProject
 {
     public partial class Form1 : Form
     {
-        List<Budget> availableBudgets; // Saved budgets available to load into main view form
+        internal static List<Budget> availableBudgets;
+        internal Budget currentBudget;
         public Form1()
         {
             InitializeComponent();
+            availableBudgets = new List<Budget>(); // Saved budgets available to load into main view form
+            lbl_BudgetName.Text = "";
         }
 
         private void newBudgetToolStripMenuItem_Click(object sender, EventArgs e)
@@ -23,5 +26,27 @@ namespace VisualProgrammingFinalProject
             BudgetCreatorForm budgetCreatorForm = new BudgetCreatorForm();
             budgetCreatorForm.ShowDialog();
         }
+
+        private void loadBudgetToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SelectBudgetForm selectBudgetForm = new SelectBudgetForm();
+            selectBudgetForm.ShowDialog();
+        }
+
+        internal void SetCurrentBudget(Budget b)
+        {
+            this.currentBudget = b;
+            MessageBox.Show("Budget Loaded");
+            RefreshBudget();
+        }
+
+        internal void RefreshBudget()
+        {
+            lbl_BudgetName.Text = this.currentBudget.name;
+        }
+
     }
+
+
+   
 }

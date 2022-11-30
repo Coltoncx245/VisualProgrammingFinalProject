@@ -31,6 +31,8 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newBudgetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.loadBudgetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lbl_BudgetName = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,7 +50,8 @@
             // fileToolStripMenuItem
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.newBudgetToolStripMenuItem});
+            this.newBudgetToolStripMenuItem,
+            this.loadBudgetToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
             this.fileToolStripMenuItem.Text = "File";
@@ -56,15 +59,32 @@
             // newBudgetToolStripMenuItem
             // 
             this.newBudgetToolStripMenuItem.Name = "newBudgetToolStripMenuItem";
-            this.newBudgetToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.newBudgetToolStripMenuItem.Size = new System.Drawing.Size(177, 26);
             this.newBudgetToolStripMenuItem.Text = "New Budget";
             this.newBudgetToolStripMenuItem.Click += new System.EventHandler(this.newBudgetToolStripMenuItem_Click);
+            // 
+            // loadBudgetToolStripMenuItem
+            // 
+            this.loadBudgetToolStripMenuItem.Name = "loadBudgetToolStripMenuItem";
+            this.loadBudgetToolStripMenuItem.Size = new System.Drawing.Size(177, 26);
+            this.loadBudgetToolStripMenuItem.Text = "Load Budget";
+            this.loadBudgetToolStripMenuItem.Click += new System.EventHandler(this.loadBudgetToolStripMenuItem_Click);
+            // 
+            // lbl_BudgetName
+            // 
+            this.lbl_BudgetName.AutoSize = true;
+            this.lbl_BudgetName.Location = new System.Drawing.Point(12, 40);
+            this.lbl_BudgetName.Name = "lbl_BudgetName";
+            this.lbl_BudgetName.Size = new System.Drawing.Size(90, 16);
+            this.lbl_BudgetName.TabIndex = 1;
+            this.lbl_BudgetName.Text = "Budget Name";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lbl_BudgetName);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
@@ -81,6 +101,8 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem newBudgetToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem loadBudgetToolStripMenuItem;
+        private System.Windows.Forms.Label lbl_BudgetName;
     }
 }
 

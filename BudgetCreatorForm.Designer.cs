@@ -34,6 +34,9 @@
             this.lbl_Expenses = new System.Windows.Forms.Label();
             this.btn_AddIncome = new System.Windows.Forms.Button();
             this.btn_AddExpense = new System.Windows.Forms.Button();
+            this.btn_SaveBudget = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tb_BudgetName = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lb_Income
@@ -91,11 +94,40 @@
             this.btn_AddExpense.Text = "Add Expense";
             this.btn_AddExpense.UseVisualStyleBackColor = true;
             // 
+            // btn_SaveBudget
+            // 
+            this.btn_SaveBudget.Location = new System.Drawing.Point(231, 383);
+            this.btn_SaveBudget.Name = "btn_SaveBudget";
+            this.btn_SaveBudget.Size = new System.Drawing.Size(75, 23);
+            this.btn_SaveBudget.TabIndex = 6;
+            this.btn_SaveBudget.Text = "Save";
+            this.btn_SaveBudget.UseVisualStyleBackColor = true;
+            this.btn_SaveBudget.Click += new System.EventHandler(this.btn_SaveBudget_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(27, 386);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(44, 16);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Name";
+            // 
+            // tb_BudgetName
+            // 
+            this.tb_BudgetName.Location = new System.Drawing.Point(77, 383);
+            this.tb_BudgetName.Name = "tb_BudgetName";
+            this.tb_BudgetName.Size = new System.Drawing.Size(148, 22);
+            this.tb_BudgetName.TabIndex = 8;
+            // 
             // BudgetCreatorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.tb_BudgetName);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btn_SaveBudget);
             this.Controls.Add(this.btn_AddExpense);
             this.Controls.Add(this.btn_AddIncome);
             this.Controls.Add(this.lbl_Expenses);
@@ -117,5 +149,8 @@
         private System.Windows.Forms.Label lbl_Expenses;
         private System.Windows.Forms.Button btn_AddIncome;
         private System.Windows.Forms.Button btn_AddExpense;
+        private System.Windows.Forms.Button btn_SaveBudget;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox tb_BudgetName;
     }
 }
