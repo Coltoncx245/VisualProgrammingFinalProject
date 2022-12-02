@@ -63,11 +63,11 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Income.cs" />
-    <Compile Include="NewIncomeForm.cs">
+    <Compile Include="NewIncomeBill.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NewIncomeForm.Designer.cs">
-      <DependentUpon>NewIncomeForm.cs</DependentUpon>
+    <Compile Include="NewIncomeBill.Designer.cs">
+      <DependentUpon>NewIncomeBill.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -83,8 +83,8 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NewIncomeForm.resx">
-      <DependentUpon>NewIncomeForm.cs</DependentUpon>
+    <EmbeddedResource Include="NewIncomeBill.resx">
+      <DependentUpon>NewIncomeBill.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

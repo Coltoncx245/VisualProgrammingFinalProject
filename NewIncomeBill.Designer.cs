@@ -1,6 +1,6 @@
 ﻿namespace VisualProgrammingFinalProject
 {
-    partial class NewIncomeForm
+    partial class NewIncomeBill
     {
         /// <summary>
         /// Required designer variable.
@@ -36,7 +36,7 @@
             this.lbl_Date = new System.Windows.Forms.Label();
             this.cb_Recurring = new System.Windows.Forms.CheckBox();
             this.ud_Recurring = new System.Windows.Forms.DomainUpDown();
-            this.btn_SubmitNewIncome = new System.Windows.Forms.Button();
+            this.btn_SubmitNewIncomeBill = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbl_Name
@@ -73,7 +73,7 @@
             // 
             // cal_NewIncomeCalendar
             // 
-            this.cal_NewIncomeCalendar.Location = new System.Drawing.Point(78, 90);
+            this.cal_NewIncomeCalendar.Location = new System.Drawing.Point(35, 115);
             this.cal_NewIncomeCalendar.MaxSelectionCount = 1;
             this.cal_NewIncomeCalendar.Name = "cal_NewIncomeCalendar";
             this.cal_NewIncomeCalendar.TabIndex = 5;
@@ -91,7 +91,7 @@
             // 
             this.cb_Recurring.AutoSize = true;
             this.cb_Recurring.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.cb_Recurring.Location = new System.Drawing.Point(17, 309);
+            this.cb_Recurring.Location = new System.Drawing.Point(17, 361);
             this.cb_Recurring.Name = "cb_Recurring";
             this.cb_Recurring.Size = new System.Drawing.Size(87, 20);
             this.cb_Recurring.TabIndex = 7;
@@ -106,28 +106,28 @@
             this.ud_Recurring.Items.Add("Bi-Weekly");
             this.ud_Recurring.Items.Add("Monthly");
             this.ud_Recurring.Items.Add("Yearly");
-            this.ud_Recurring.Location = new System.Drawing.Point(110, 307);
+            this.ud_Recurring.Location = new System.Drawing.Point(110, 359);
             this.ud_Recurring.Name = "ud_Recurring";
             this.ud_Recurring.Size = new System.Drawing.Size(120, 22);
             this.ud_Recurring.TabIndex = 8;
             this.ud_Recurring.Visible = false;
             // 
-            // btn_SubmitNewIncome
+            // btn_SubmitNewIncomeBill
             // 
-            this.btn_SubmitNewIncome.Location = new System.Drawing.Point(155, 360);
-            this.btn_SubmitNewIncome.Name = "btn_SubmitNewIncome";
-            this.btn_SubmitNewIncome.Size = new System.Drawing.Size(75, 23);
-            this.btn_SubmitNewIncome.TabIndex = 9;
-            this.btn_SubmitNewIncome.Text = "Submit";
-            this.btn_SubmitNewIncome.UseVisualStyleBackColor = true;
-            this.btn_SubmitNewIncome.Click += new System.EventHandler(this.btn_SubmitNewIncome_Click);
+            this.btn_SubmitNewIncomeBill.Location = new System.Drawing.Point(155, 412);
+            this.btn_SubmitNewIncomeBill.Name = "btn_SubmitNewIncomeBill";
+            this.btn_SubmitNewIncomeBill.Size = new System.Drawing.Size(75, 23);
+            this.btn_SubmitNewIncomeBill.TabIndex = 9;
+            this.btn_SubmitNewIncomeBill.Text = "Submit";
+            this.btn_SubmitNewIncomeBill.UseVisualStyleBackColor = true;
+            this.btn_SubmitNewIncomeBill.Click += new System.EventHandler(this.btn_SubmitNewIncomeBill_Click);
             // 
-            // NewIncomeForm
+            // NewIncomeBill
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(375, 419);
-            this.Controls.Add(this.btn_SubmitNewIncome);
+            this.ClientSize = new System.Drawing.Size(332, 469);
+            this.Controls.Add(this.btn_SubmitNewIncomeBill);
             this.Controls.Add(this.ud_Recurring);
             this.Controls.Add(this.cb_Recurring);
             this.Controls.Add(this.lbl_Date);
@@ -136,8 +136,8 @@
             this.Controls.Add(this.lbl_Amount);
             this.Controls.Add(this.tb_IncomeName);
             this.Controls.Add(this.lbl_Name);
-            this.Name = "NewIncomeForm";
-            this.Text = "NewIncomeForm";
+            this.Name = "NewIncomeBill";
+            this.Text = "New Income/Expense";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -153,6 +153,6 @@
         private System.Windows.Forms.Label lbl_Date;
         private System.Windows.Forms.CheckBox cb_Recurring;
         private System.Windows.Forms.DomainUpDown ud_Recurring;
-        private System.Windows.Forms.Button btn_SubmitNewIncome;
+        private System.Windows.Forms.Button btn_SubmitNewIncomeBill;
     }
 }

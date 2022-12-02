@@ -9,19 +9,18 @@ namespace VisualProgrammingFinalProject
     internal class Expense
     {
         public string name;
-        public float amount;            // Dollar amount of expense
+        public double amount;            // Dollar amount of expense
         public Date date;               // Date of expense
         public bool recurring;          // Expense is recurring
 
-    }
-
-    internal class Bill : Expense
-    {
-        public Bill(float billAmount, Date billDate, bool isRecurring = false)
+        public Expense(string name, double amount, Date date, bool recurring)
         {
-            this.amount = billAmount;
-            this.date = billDate;
-            this.recurring = isRecurring;
+            this.name = name;
+            this.amount = amount;
+            this.date = date;
+            this.recurring = recurring;
         }
     }
+
+
 }

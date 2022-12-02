@@ -37,12 +37,18 @@ namespace VisualProgrammingFinalProject
         {
             this.currentBudget = b;
             MessageBox.Show("Budget Loaded");
+
+
+
             RefreshBudget();
         }
 
         internal void RefreshBudget()
         {
             lbl_BudgetName.Text = this.currentBudget.name;
+            chart_main.Series["BudgetNet"].Points.AddXY("Total Income", this.currentBudget.totalIncome.ToString());
+            chart_main.Series["BudgetNet"].Points.AddXY("Total Expense", this.currentBudget.totalExpenses.ToString());
+
         }
 
     }

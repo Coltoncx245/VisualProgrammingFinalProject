@@ -93,6 +93,7 @@
             this.btn_AddExpense.TabIndex = 5;
             this.btn_AddExpense.Text = "Add Expense";
             this.btn_AddExpense.UseVisualStyleBackColor = true;
+            this.btn_AddExpense.Click += new System.EventHandler(this.btn_AddExpense_Click);
             // 
             // btn_SaveBudget
             // 
@@ -124,7 +125,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(344, 450);
             this.Controls.Add(this.tb_BudgetName);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_SaveBudget);
@@ -135,7 +136,7 @@
             this.Controls.Add(this.lb_Expenses);
             this.Controls.Add(this.lb_Income);
             this.Name = "BudgetCreatorForm";
-            this.Text = "BudgetCreatorForm";
+            this.Text = "Budget Creator";
             this.ResumeLayout(false);
             this.PerformLayout();
 

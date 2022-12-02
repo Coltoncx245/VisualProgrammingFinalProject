@@ -12,29 +12,31 @@ namespace VisualProgrammingFinalProject
 {
     public partial class BudgetCreatorForm : Form
     {
-        Budget newBudget = new Budget();
+
+        Budget newBudget;
 
         public BudgetCreatorForm()
         {
             InitializeComponent();
+            newBudget = new Budget();
 
         }
 
         private void btn_AddIncome_Click(object sender, EventArgs e)
         {
-            NewIncomeForm nif = new NewIncomeForm(this);
+            NewIncomeBill nif = new NewIncomeBill(this, true);
             nif.ShowDialog();
         }
 
         // Adds Expense to working budget, used for passing data from other forms
         internal void AddExpense(Expense e)
         {
-            this.newBudget.budgetExpenses.Add(e);
+           newBudget.budgetExpenses.Add(e);
         }
         // Adds Income to working budget, used for passing data from other forms
         internal void AddIncome(Income I)
         {
-            this.newBudget.budgetIncome.Add(I);
+            newBudget.budgetIncome.Add(I);
         }
 
         internal void UpdateLists()
@@ -62,10 +64,18 @@ namespace VisualProgrammingFinalProject
             else
             {
                 newBudget.name = tb_BudgetName.Text;
+                newBudget.CalcTotals();
                 Form1.availableBudgets.Add(newBudget);
+                MessageBox.Show("Budget Saved");
                 this.Close();
             }
             
+        }
+
+        private void btn_AddExpense_Click(object sender, EventArgs e)
+        {
+            NewIncomeBill nif = new NewIncomeBill(this, false);
+            nif.ShowDialog();
         }
     }
 }
