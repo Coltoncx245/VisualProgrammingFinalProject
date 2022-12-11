@@ -1,0 +1,14 @@
+C:\Users\Connor\Desktop\VisualProgrammingFinalProject-master\bin\Debug\VisualProgrammingFinalProject.exe.config
+C:\Users\Connor\Desktop\VisualProgrammingFinalProject-master\bin\Debug\VisualProgrammingFinalProject.exe
+C:\Users\Connor\Desktop\VisualProgrammingFinalProject-master\bin\Debug\VisualProgrammingFinalProject.pdb
+C:\Users\Connor\Desktop\VisualProgrammingFinalProject-master\obj\Debug\VisualProgrammingFinalProject.csproj.AssemblyReference.cache
+C:\Users\Connor\Desktop\VisualProgrammingFinalProject-master\obj\Debug\VisualProgrammingFinalProject.csproj.SuggestedBindingRedirects.cache
+C:\Users\Connor\Desktop\VisualProgrammingFinalProject-master\obj\Debug\VisualProgrammingFinalProject.BudgetCreatorForm.resources
+C:\Users\Connor\Desktop\VisualProgrammingFinalProject-master\obj\Debug\VisualProgrammingFinalProject.Form1.resources
+C:\Users\Connor\Desktop\VisualProgrammingFinalProject-master\obj\Debug\VisualProgrammingFinalProject.NewIncomeBill.resources
+C:\Users\Connor\Desktop\VisualProgrammingFinalProject-master\obj\Debug\VisualProgrammingFinalProject.Properties.Resources.resources
+C:\Users\Connor\Desktop\VisualProgrammingFinalProject-master\obj\Debug\VisualProgrammingFinalProject.SelectBudgetForm.resources
+C:\Users\Connor\Desktop\VisualProgrammingFinalProject-master\obj\Debug\VisualProgrammingFinalProject.csproj.GenerateResource.cache
+C:\Users\Connor\Desktop\VisualProgrammingFinalProject-master\obj\Debug\VisualProgrammingFinalProject.csproj.CoreCompileInputs.cache
+C:\Users\Connor\Desktop\VisualProgrammingFinalProject-master\obj\Debug\VisualProgrammingFinalProject.exe
+C:\Users\Connor\Desktop\VisualProgrammingFinalProject-master\obj\Debug\VisualProgrammingFinalProject.pdb
